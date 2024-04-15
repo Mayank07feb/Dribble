@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="second.css">
+</head>
+
+<body>
+    <img src="logo2.png" alt="Logo" class="logo">
+    <div class="container">
+        <h1 class="left-align">Welcome! Let's create your profile</h1>
+        <p class="left-align">Let others get to know you better! You can do these later</p>
+        <form action="/create-profile" method="POST" enctype="multipart/form-data"></form>
+        <div class="avatar-section">
+            <p class="avatar-text">Add an avatar</p>
+            <div class="circle-text">
+                <div class="avatar" id="avatarContainer">
+                    <i class="material-icons">camera_alt</i> <!-- Google camera icon -->
+                </div>
+                <div>
+                    <input type="file" id="avatarInput" accept="image/*" onchange="handleAvatarUpload(event)">
+                    <span class="gray-text arrow next-line">&gt; Or choose one of our defaults</span>
+                </div>
+            </div>
+        </div>
+        <div class="location-section">
+            <p class="location-text">Add your location</p>
+            <div class="input-with-icon">
+                <input type="text" id="locationInput" placeholder="Enter your location">
+            </div>
+        </div>
+        <div class="button-section">
+            <button id="nextButton" class="next-button">Next</button>
+        </div>
+    </form>
+    </div>
+    <script src="second.js"></script>
+</body>
+
+</html>

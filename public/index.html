@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128290; Sign Up to Dribbble &#128290;</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="text-above-image">
+                <h2>Discover the world's top<br>Designers & Creatives.</h2>
+            </div>
+            <div class="overlay-text">Art by <span class="underline-text">Peter Tarka</span></div>
+            <img src="side.jpg" alt="img">
+        </div>
+        <div class="right-section">
+            <div class="signin-text">
+                Already a member? <span class="signin-link"><a href="">Sign in</a></span>
+            </div>
+            <div class="box2">
+                <h2>Sign up to Dribbble</h2>
+                <p>Username has already been taken</p>
+                <form action="/signup" method="POST">
+                    <div class="name-user">
+                        <div class="form-group label-name"> <!-- Updated class name for Name input -->
+                            <label class="text-name" for="name">Name</label>
+                            <input type="text" id="name" placeholder="John">
+                        </div>
+                        <div class="form-group label-username"> <!-- Updated class name for Username input -->
+                            <label class="text-username" for="username">Username</label>
+                            <input type="text" id="username" placeholder="John_07">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-email" for="email">Email</label>
+                        <input type="email" id="email" placeholder="account@refero.design">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-password" for="password">Password</label>
+                        <input type="password" id="password" placeholder="6+ characters">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">
+                            <span class="highlight-text">Creating an account means you're okay with our</span>
+                            <span class="highlight-blue">Terms of Service, Privacy Policy</span>
+                            <span class="highlight-text">, and our default</span>
+                            <span class="highlight-blue">Notification <br>Settings.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="create-account-btn">Create Account</button>
+                </form>
+                <div class="last-text">
+                    <span class="gray">This site is protected by reCAPTCHA and the Google </span>
+                    <span class="blue"> Privacy Policy </span>
+                    <span class="gray">and </span>
+                    <span class="blue">Terms of Service</span>
+                    <span class="gray">apply.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.avatar {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-text {
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.avatar img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+}
+
+.avatar .material-icons {
+    font-size: px;
+    color: #333;
+}
+
+#avatarInput {
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+.location-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.location-text {
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.input-with-icon .icon {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.gray-text {
+    color: gray;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+.next-line {
+    display: block;
+}
+
+.button-section {
+    margin-top: 20px;
+    /* Adjust margin as needed */
+    text-align: left;
+    /* Align the button to the left */
+}
+
+.next-button {
+    background-color: rgb(216, 53, 154);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+}
+
+.circle-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Decrease padding for smaller screens */
+    }
+
+    .logo {
+        width: 150px; /* Adjust logo size for smaller screens */
+    }
+
+    .left-align {
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .avatar-text,
+    .location-text {
+        margin-top: 30px; /* Adjusted margin for smaller screens */
+    }
+
+    .avatar {
+        width: 80px; /* Adjusted avatar size for smaller screens */
+        height: 80px; /* Adjusted avatar size for smaller screens */
+        padding: 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .avatar-text {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        margin-top: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    .avatar .material-icons {
+        font-size: 24px; /* Adjusted icon size for smaller screens */
+    }
+
+    #avatarInput {
+        margin-left: 30px; /* Adjusted margin for smaller screens */
+        margin-bottom: 30px; /* Adjusted margin for smaller screens */
+    }
+
+    .location-section {
+        margin-top: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    .next-button {
+        width: 150px; /* Adjusted button width for smaller screens */
+    }
+}

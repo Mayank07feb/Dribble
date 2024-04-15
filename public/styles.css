@@ -1,0 +1,274 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7e8;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.left-section {
+    width: 40%;
+    max-width: 460px;
+    position: relative;
+    /* Positioning the container relative */
+}
+
+.text-above-image {
+    position: absolute;
+    /* Position the text absolutely */
+    top: 100px;
+    /* Adjust the top position as needed */
+    left: 50px;
+    /* Adjust the left position as needed */
+    color: rgb(121, 82, 32);
+    z-index: 1;
+    /* Ensure text appears above the image */
+    font-size: large;
+}
+
+.text-above-image h2 {
+    margin: 0;
+    /* Remove default margins */
+}
+
+.logo-container {
+    position: absolute;
+    /* Set the position of the logo container to absolute */
+    top: 30px;
+    /* Adjust the top position as needed */
+    left: 0px;
+    /* Adjust the left position as needed */
+    z-index: 1;
+    /* Ensure the logo appears above the image */
+}
+
+.logo {
+    width: 180px !important;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust the position as needed */
+    left: 30px;
+    /* Adjust the position as needed */
+    color: rgb(148, 101, 41);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+
+.left-section img {
+    width: 100%;
+    height: auto;
+    max-height: 1500px;
+    /* Increased maximum height to 2000px */
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.signin-text {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 70%;
+    font-weight: bold;
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+.signin-link a{
+    color: blue;
+    /* Change the color of 'Sign in' to blue */
+}
+
+.box2 {
+    width: 60%;
+    height: 80%;
+}
+
+.right-section {
+    flex-grow: 1;
+    background-color: white;
+    padding: 70px 20px 80px 20px;
+    border-radius: 0px;
+    margin-left: 1px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Add border and background color to all input fields */
+.form-group input {
+    border: none;
+    background-color: #eee;
+}
+
+/* Adjusting width for Name label and input */
+.form-group.label-name,
+.form-group.label-username {
+    width: 45%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.form-group.label-name label,
+.form-group.label-username label {
+    width: 100%;
+}
+
+.form-group.label-username {
+    float: right;
+}
+
+.text-name {
+    text-align: left;
+}
+
+.text-username {
+    text-align: left;
+}
+
+.name-user {
+    margin-top: 50px;
+}
+
+.text-email {
+    margin-right: 90%;
+}
+
+.text-password {
+    margin-right: 86%;
+}
+
+.form-group input#email {
+    width: 96%;
+    border-radius: 8px;
+    background-color: rgb(238, 236, 236);
+}
+
+.form-group input#password {
+    width: 96%;
+    border-radius: 8px;
+    background-color: rgb(238, 236, 236);
+}
+
+/* Styles for the checkbox and its label */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: 35px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+    width: 81%;
+}
+
+.checkbox-group label .highlight-text {
+    color: gray;
+    /* Change 'blue' to the color you want */
+}
+
+.checkbox-group label .highlight-blue {
+    color: blue;
+    /* Change 'red' to the color you want */
+}
+
+
+.create-account-btn {
+    background-color: #ea4c89;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.last-text {
+    font-size: 12px;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.last-text .gray {
+    color: gray;
+}
+
+.last-text .blue {
+    color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .left-section {
+        width: 100%;
+        max-width: none;
+    }
+
+    .right-section {
+        margin-left: 0;
+        margin-top: 0;
+        border-right: none;
+    }
+
+    /* Adjusting width for smaller screens */
+    .form-group.label-name,
+    .form-group.label-username {
+        width: 100%;
+        margin-right: 0;
+        /* Remove margin on smaller screens */
+    }
+}
